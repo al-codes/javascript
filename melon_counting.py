@@ -21,9 +21,13 @@ def count_melons(melon_list):
 
     for melon in melon_list:
         if melon in melon_counts:
+            #If key in dictionary, adds one to count (value)
             melon_counts[melon] = melon_counts[melon] + 1
-
+            
+            #if key not in dictionary, creates and adds 1 to count
         else:
             melon_counts[melon] = 1
-
+    
     return melon_counts
+
+print_melon_counts = print(count_melons(melons_to_add))
